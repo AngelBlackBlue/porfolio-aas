@@ -6,6 +6,7 @@ import GitHub from '@/icons/Github.astro';
 import Layout from '@/layouts/Layout.astro';
 import Gmail from '@/icons/Gmail.astro';
 import image from "../../public/images/photo-aas.jpeg"
+import Expirience from '@/components/Expirience.astro';
 
 ---
 
@@ -14,7 +15,7 @@ import image from "../../public/images/photo-aas.jpeg"
 	description=""
 	>
 	<main>
-		<section class="w-full mx-auto lg:w-[740px] text-white">
+		<section class="w-full mx-auto lg:w-[740px] text-white mt-20">
 			<h1 class="text-3xl font-bold flex justify-center flex-row gap-x-4 pb-4">
 				Hey 👋, I'm Angel Suarez! 
 				<a 
@@ -23,7 +24,7 @@ import image from "../../public/images/photo-aas.jpeg"
 					rel="noopener"
 					class="flex items-center"
 				>		
-					<Badge>Disponible para trabajar</Badge>
+					<!-- <Badge>Disponible para trabajar</Badge> -->
 				</a>
 			</h1>
 			<h2 class="text-xl flex justify-center">
@@ -45,7 +46,11 @@ import image from "../../public/images/photo-aas.jpeg"
 					Gmail
 				</Social>
 			</nav>
-		</section>		
+		</section>	
+		
+		<section class="w-full mx-auto lg:w-[740px] text-white mt-20">
+			<Expirience/>
+		</section>
 		
 		<section class="flex justify-center mt-20">
 

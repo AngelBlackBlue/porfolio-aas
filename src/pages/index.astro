@@ -1,12 +1,28 @@
 ---
+import Badge from '@/components/Badge.astro';
 import Layout from '@/layouts/Layout.astro';
 
 ---
 
 <Layout title="Portfolio">
 	<main>
-	
+		<section class="w-full mx-auto lg:w-[740px] py-44 text-white">
+			<h1 class="text-3xl font-bold flex justify-center flex-row gap-x-4 pb-4">
+				Hey 👋, I'm Angel Suarez! 
+				<a 
+				    href="https://www.linkedin.com/in/suarezangel/"
+					target="_blank"
+					rel="noopener"
+					class="flex items-center"
+				>		
+					<Badge>Disponible</Badge>
+				</a>
+			</h1>
+			<h2 class="text-xl flex justify-center">
+				Desarrollador Full Stack. De Argentina 💙🤍💙 🧉.
+			</h2>
 		
+		</section>		
 	</main>
 </Layout>
 

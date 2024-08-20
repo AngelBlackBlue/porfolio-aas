@@ -1,0 +1,38 @@
+---
+import ExperienceIcon from "@/icons/ExperienceIcon.astro"
+
+const EXPERIENCE = [
+    {
+        date: "2022 - Present",
+        title: "Frontend Developer",
+        description: "Developing and maintaining web applications using React, Next.js, and other modern web technologies.",
+        company: "B2B",
+        link: "https://www.b2b.com",
+    
+    },
+    {
+        date: "2021 - 2022",
+        title: "Frontend Developer",
+        description: "Developing and maintaining web applications using React, Next.js, and other modern web technologies.",
+        company: "B2C",
+    },
+    {
+        date: "2020 - 2021",
+        title: "Frontend Developer",
+        description: "Developing and maintaining web applications using React, Next.js, and other modern web technologies.",
+        company: "B2B",
+    },
+]
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">    
+    {
+        EXPERIENCE.map((experience) => (
+            <li class="mb-10 ml-6">
+                <ExperienceIcon {...experience}/>
+            </li>
+            ))
+            
+    }                 
+</ol>
+

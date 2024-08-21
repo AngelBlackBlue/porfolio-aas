@@ -1,5 +1,5 @@
 ---
-import ExperienceIcon from "@/components/ExperienceItem.astro"
+import ExperienceItem from "@/components/ExperienceItem.astro"
 
 const EXPERIENCE = [
     {
@@ -29,7 +29,7 @@ const EXPERIENCE = [
     {
         EXPERIENCE.map((experience) => (
             <li class="mb-10 ml-6">
-                <ExperienceIcon {...experience}/>
+                <ExperienceItem {...experience}/>
             </li>
             ))
             

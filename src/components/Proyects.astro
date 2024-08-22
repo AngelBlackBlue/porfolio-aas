@@ -1,0 +1,21 @@
+---
+import ProyectsItem from "./ProyectsItem.astro"
+
+
+const PROYECTS = [
+    {
+        title: 'Proyecto 1',
+        description: 'Descripción del proyecto 1',
+        image: 'https://via.placeholder.com/150',
+        tags: ['HTML', 'CSS', 'JavaScript'],
+        link: 'https://www.example.com'
+    },
+]
+
+---
+
+{
+    PROYECTS.map(proyect => (
+        <ProyectsItem {...proyect}/>
+    ))
+}

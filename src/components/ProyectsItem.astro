@@ -1,0 +1,37 @@
+---
+
+interface props {
+    title: string
+    description: string
+    image: string
+    link: string
+    tags: string[]
+}
+
+const { title, description, image, link, tags} = Astro.props
+
+---
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg " src={image} alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                > {title}
+            </h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"
+            > {description}
+        </p>
+        <ul>
+            {tags.map((tag: string) => (
+                <li class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    {tag}
+                </li>
+            ))}
+        </ul>
+
+    </div>
+</div>

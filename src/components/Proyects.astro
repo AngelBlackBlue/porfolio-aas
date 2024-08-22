@@ -1,14 +1,23 @@
 ---
 import ProyectsItem from "./ProyectsItem.astro"
+import HtmlIcon from "@/icons/Html.astro"
+
+const TAGS = {
+    HTML: {
+        name: 'HTML',
+        icon: HtmlIcon,
+    }
+}
 
 
 const PROYECTS = [
     {
-        title: 'Proyecto 1',
-        description: 'Descripción del proyecto 1',
-        image: 'https://via.placeholder.com/150',
-        tags: ['HTML', 'CSS', 'JavaScript'],
-        link: 'https://www.example.com'
+        image: "/images/proyects/prueba.webp",
+        title: 'Backend - Stock Flow Pro',
+        description: 'Web App de control de stock',
+        link: 'https://www.example.com',
+        github: '#',
+        tags: [TAGS.HTML],
     },
 ]
 

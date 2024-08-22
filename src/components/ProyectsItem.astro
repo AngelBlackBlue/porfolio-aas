@@ -1,37 +1,36 @@
 ---
 
-interface props {
-    title: string
-    description: string
-    image: string
-    link: string
-    tags: string[]
+interface Props {
+    title: string;
+    description: string;
+    image: string;
+    link: string;
+    tags: { name: string; icon: any }[]; // Ajustado para manejar objetos con `name` e `icon`
 }
 
-const { title, description, image, link, tags} = Astro.props
+const { title, description, image, link, tags } = Astro.props;
 
 ---
 
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <img class="rounded-t-lg " src={image} alt="" />
+<div class="max-w-sm bg-black-900 border border-gray-200 rounded-lg shadow">
+    <a href={link}>
+        <img class="rounded-t-lg" src={image} alt={`Captura de pantalla del proyecto ${title}`} />
     </a>
     <div class="p-5">
-        <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-                > {title}
+        <a href={link}>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600">
+                {title}
             </h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-            > {description}
+        <p class="mb-3 font-normal text-gray-300">
+            {description}
         </p>
         <ul>
-            {tags.map((tag: string) => (
+            {tags.map(tag => (
                 <li class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                    {tag}
+                    <tag.icon class="inline-block mr-1 size-6"/> {tag.name}
                 </li>
             ))}
         </ul>
-
     </div>
 </div>

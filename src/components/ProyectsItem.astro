@@ -1,14 +1,18 @@
 ---
+import Github from '@/icons/Github.astro';
+import Social from './Social.astro';
+
 
 interface Props {
     title: string;
     description: string;
     image: string;
     link: string;
+    github?: string;
     tags: { name: string; icon: any }[]; // Ajustado para manejar objetos con `name` e `icon`
 }
 
-const { title, description, image, link, tags } = Astro.props;
+const { title, description, image, link, tags, github } = Astro.props;
 
 ---
 
@@ -32,5 +36,10 @@ const { title, description, image, link, tags } = Astro.props;
                 </li>
             ))}
         </ul>
+        <Social href={github} >
+            <Github  class="size-6"/> 
+            GitHub
+        </Social>
+ 
     </div>
 </div>

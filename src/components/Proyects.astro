@@ -12,8 +12,9 @@ import TypescriptIcon from "@/icons/Typescript.astro"
 import NestJsIcon from "@/icons/Nestjs.astro"
 import CloudinaryIcon from "@/icons/Cloudinary.astro"
 import ViteIcon from "@/icons/Vite.astro"
-
-
+import JwtIcon from "@/icons/Jwt.astro"
+import SequelizeIcon from "@/icons/Sequelize.astro"
+import PostgreSQLIcon from "@/icons/PostgreSQL.astro"
 
 const TAGS = {
     HTML: {
@@ -65,7 +66,20 @@ const TAGS = {
         name: 'Cloudinary',
         icon: CloudinaryIcon,
     },
+    JWT: {
+        name: 'JWT',
+        icon: JwtIcon,
+    },
+    SEQUELIZE: {
+        name: 'Sequelize',
+        icon: SequelizeIcon,
+    },
+    POSTGRESQL: {
+        name: 'PostgreSQL',
+        icon: PostgreSQLIcon,
+    },
     
+       
 
     
 }
@@ -78,7 +92,7 @@ const PROYECTS = [
         description: 'Plataforma de gestión de inventarios y stock.',
         link: 'https://gestor-360.vercel.app/auth/login',
         github: 'https://github.com/No-Country/s14-05-t-node-react',
-        tags: [TAGS.TYPESCRIPT, TAGS.NESTJS, TAGS.CLOUDINARY, ],
+        tags: [TAGS.TYPESCRIPT, TAGS.NESTJS, TAGS.CLOUDINARY, TAGS.JWT, TAGS.SEQUELIZE, TAGS.POSTGRESQL ],
     
     },
     {

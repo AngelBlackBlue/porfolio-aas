@@ -45,15 +45,11 @@ const { title, description, image, link, tags, github } = Astro.props;
             </Social>
             {
                 link && 
-                    <Social href={github} >
+                    <Social href={link} >
                         <NetWorkIcon class="size-6"/> 
                          Deploy
                     </Social>
             }
- 
-        </div>
-
-        
- 
+        </div>        
     </div>
 </div>

@@ -1,13 +1,14 @@
 ---
-import Github from '@/icons/Github.astro';
+
 import Social from './Social.astro';
+import GithubBrandIcon from '@/icons/GithubBrand.astro';
 
 
 interface Props {
     title: string;
     description: string;
     image: string;
-    link: string;
+    link?: string;
     github?: string;
     tags: { name: string; icon: any }[]; // Ajustado para manejar objetos con `name` e `icon`
 }
@@ -17,9 +18,9 @@ const { title, description, image, link, tags, github } = Astro.props;
 ---
 
 <div class="max-w-sm border border-blue-600 rounded-lg shadow">
-    <a href={link}>
-        <img class="rounded-t-lg" src={image} alt={`Captura de pantalla del proyecto ${title}`} />
-    </a>
+    
+    <img class="rounded-t-lg" src={image} alt={`Captura de pantalla del proyecto ${title}`} />
+   
     <div class="p-5">
         <a href={link}>
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600">
@@ -36,10 +37,22 @@ const { title, description, image, link, tags, github } = Astro.props;
                 </li>
             ))}
         </ul>
-        <Social href={github} >
-            <Github  class="size-6"/> 
-            GitHub
-        </Social>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+            <Social href={github} >
+                <GithubBrandIcon  class="size-6"/> 
+                Repositorio
+            </Social>
+            {
+                link && 
+                    <Social href={github} >
+                        <GithubBrandIcon class="size-6"/> 
+                         Deploy
+                    </Social>
+            }
+ 
+        </div>
+
+        
  
     </div>
 </div>

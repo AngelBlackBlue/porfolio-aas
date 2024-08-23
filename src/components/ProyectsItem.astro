@@ -3,6 +3,7 @@
 import Social from './Social.astro';
 import GithubBrandIcon from '@/icons/GithubBrand.astro';
 import NetWorkIcon from '@/icons/NetWork.astro';
+import YoutubeIcon from '@/icons/Youtube.astro';
 
 
 interface Props {
@@ -11,10 +12,11 @@ interface Props {
     image: string;
     link?: string;
     github?: string;
+    video?: string;    
     tags: { name: string; icon: any }[]; // Ajustado para manejar objetos con `name` e `icon`
 }
 
-const { title, description, image, link, tags, github } = Astro.props;
+const { title, description, image, link, tags, github, video } = Astro.props;
 
 ---
 
@@ -38,6 +40,7 @@ const { title, description, image, link, tags, github } = Astro.props;
                 </li>
             ))}
         </ul>
+    
         <div class="grid grid-cols-2 gap-4 mt-6">
             
             <Social href={github} >
@@ -49,6 +52,13 @@ const { title, description, image, link, tags, github } = Astro.props;
                     <Social href={link} >
                         <NetWorkIcon class="size-6"/> 
                          Deploy
+                    </Social>
+            }
+            {
+                video && 
+                    <Social href={video} >
+                        <YoutubeIcon class="size-6"/> 
+                         Video
                     </Social>
             }
         </div>        

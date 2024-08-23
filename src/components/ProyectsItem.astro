@@ -31,14 +31,15 @@ const { title, description, image, link, tags, github } = Astro.props;
         <p class="mb-3 font-normal text-gray-300">
             {description}
         </p>
-        <ul>
+        <ul >
             {tags.map(tag => (
-                <li class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
+                <li class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2 ">
                     <tag.icon class="inline-block mr-1 size-6"/> {tag.name}
                 </li>
             ))}
         </ul>
         <div class="grid grid-cols-2 gap-4 mt-6">
+            
             <Social href={github} >
                 <GithubBrandIcon  class="size-6"/> 
                 Repositorio

@@ -7,6 +7,7 @@ import FlowbiteIcon from "@/icons/Flowbite.astro"
 import JavascriptIcon from "@/icons/Javascript.astro"
 import ReactIcon from "@/icons/React.astro"
 import ReduxToolkitIcon from "@/icons/ReduxToolkit.astro"
+import GoogleIcon from "@/icons/Google.astro"
 
 const TAGS = {
     HTML: {
@@ -36,8 +37,11 @@ const TAGS = {
     REDUXTOOLKIT: {
         name: 'Redux Toolkit',
         icon: ReduxToolkitIcon,
-    },   
-    
+    },
+    GOOGLEAOUTH: {
+           name: 'OAuth Google',
+           icon: GoogleIcon,
+    }
     
 }
 
@@ -49,7 +53,8 @@ const PROYECTS = [
         description: 'Aplicación que conecta usuarios con gustos musicales similares.',
         link: 'https://s13-05-t-node-react-1b9t.onrender.com/home',
         github: 'https://github.com/AngelBlackBlue/s13-05-t-node-react-AAS',
-        tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.TAILWIND, TAGS.REACT, TAGS.REDUXTOOLKIT],    
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.TAILWIND, TAGS.REACT, TAGS.REDUXTOOLKIT, TAGS.GOOGLEAOUTH],
+    
     },
     {
         image: "/images/proyects/prueba.webp",
@@ -66,14 +71,14 @@ const PROYECTS = [
         description: 'Web App de control de stock',
         link: 'https://www.example.com',
         github: '#',
-        tags: [TAGS.HTML, TAGS.CSS, TAGS.TAILWIND ],
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.TAILWIND],
     
     },
     {
         image: "/images/proyects/prueba.webp",
         title: 'Backend - Stock Flow Pro',
         description: 'Web App de control de stock',
-        link: 'https://www.example.com',
+     
         github: '#',
         tags: [TAGS.HTML, TAGS.CSS, TAGS.TAILWIND ],
     

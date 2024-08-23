@@ -17,6 +17,7 @@ import SequelizeIcon from "@/icons/Sequelize.astro"
 import PostgreSQLIcon from "@/icons/PostgreSQL.astro"
 import SwaggerIcon from "@/icons/Swagger.astro"
 import NodeJsIcon from "@/icons/NodeJs.astro"
+import ExpressIcon from "@/icons/Express.astro"
 
 
 const TAGS = {
@@ -89,6 +90,11 @@ const TAGS = {
         name: 'NodeJS',
         icon: NodeJsIcon,
     },
+    EXPRESS: {
+        name: 'Express',
+        icon: ExpressIcon,
+    },
+    
     
     
     
@@ -123,7 +129,7 @@ const PROYECTS = [
         description: 'Web app móvil para reservas en restaurantes, con notificaciones por email.',
         link: 'https://www.example.com',
         github: '#',
-        tags: [TAGS.NODEJS  ],
+        tags: [TAGS.NODEJS, TAGS.EXPRESS  ],
     
     },
     {

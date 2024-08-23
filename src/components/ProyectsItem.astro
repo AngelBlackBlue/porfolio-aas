@@ -40,27 +40,29 @@ const { title, description, image, link, tags, github, video } = Astro.props;
                 </li>
             ))}
         </ul>
-    
+        
         <div class="grid grid-cols-2 gap-4 mt-6">
             
+           
             <Social href={github} >
                 <GithubBrandIcon  class="size-6"/> 
                 Repositorio
             </Social>
             {
-                link && 
-                    <Social href={link} >
-                        <NetWorkIcon class="size-6"/> 
-                         Deploy
-                    </Social>
+            link && 
+                <Social href={link} >
+                    <NetWorkIcon class="size-6"/> 
+                     Deploy
+                </Social>
             }
             {
                 video && 
-                    <Social href={video} >
-                        <YoutubeIcon class="size-6"/> 
-                         Video
-                    </Social>
+                   <Social href={video} >
+                       <YoutubeIcon class="size-6"/> 
+                        Video
+                   </Social>
             }
-        </div>        
+                 
+        </div>
     </div>
 </div>

@@ -2,6 +2,7 @@
 
 import Social from './Social.astro';
 import GithubBrandIcon from '@/icons/GithubBrand.astro';
+import NetWorkIcon from '@/icons/NetWork.astro';
 
 
 interface Props {
@@ -45,7 +46,7 @@ const { title, description, image, link, tags, github } = Astro.props;
             {
                 link && 
                     <Social href={github} >
-                        <GithubBrandIcon class="size-6"/> 
+                        <NetWorkIcon class="size-6"/> 
                          Deploy
                     </Social>
             }

@@ -1,0 +1,11 @@
+---
+import CardItem from "./CardItem.astro"
+import {PROYECTS} from '@/data/proyects'
+
+---
+
+{
+    PROYECTS.map(proyect => (
+        <CardItem {...proyect}/>
+    ))
+}

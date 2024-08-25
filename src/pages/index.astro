@@ -7,10 +7,11 @@ import Layout from '@/layouts/Layout.astro';
 import Gmail from '@/icons/Gmail.astro';
 import Expirience from '@/components/Expirience.astro';
 import Briefcase from '@/icons/Briefcase.astro';
-import Proyects from '@/components/Cards.astro';
+import Proyects from '@/components/CardsProyects.astro';
 import CodeIcon from '@/icons/Code.astro';
 import SkillsIcon from '@/icons/Skills.astro';
-import Cards from '@/components/Cards.astro';
+import CardsProyects from '@/components/CardsProyects.astro';
+import CardsSkills from '@/components/CardsSkills.astro';
 
 
 ---
@@ -71,7 +72,7 @@ import Cards from '@/components/Cards.astro';
 			</h2>
 			<div class="flex justify-center">
 				<div class="grid grid-cols-3 gap-4 ">
-					<Cards/>		   
+					<CardsProyects/>		   
 				</div>
 			</div>			
 		</section>
@@ -81,11 +82,12 @@ import Cards from '@/components/Cards.astro';
 				<SkillsIcon class="size-6"/>
 				Skills
 			</h2>
-			<!-- <div class="flex justify-center">
-				<div class="grid grid-cols-3 gap-4 ">
-					<Proyects/>		   
-				</div>
-			</div>			 -->
+			<div>
+				<CardsSkills/>		   
+			
+
+			</div>
+			 
 		</section>
 	</main>
 </Layout>

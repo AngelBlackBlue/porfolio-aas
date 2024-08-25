@@ -1,8 +1,23 @@
 ---
 import { TAGS } from "@/data/tags";
+import SkillItem from "./SkillItem.astro";
+
+const SKILLS = [
+    {
+        title: 'Front end',
+        tags: [TAGS.JS, TAGS.TYPESCRIPT, TAGS.HTML, TAGS.CSS, ]
+    },
+    {
+        title: 'Back End',
+        tags: [TAGS.JS, TAGS.TYPESCRIPT, TAGS.HTML, TAGS.CSS, ]
+    },
+]
+
 ---
 
-<div>
-    hola
 
-</div>
+{
+    SKILLS.map(skill => (
+        <SkillItem {...skill}/>
+    ))
+}

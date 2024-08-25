@@ -9,16 +9,18 @@ const { title, tags } = Astro.props
 
 ---
 
-<div class="flex flex-col justify-center items-center ">
+<div >
     
     <div class="p-5">
         <h5 class="mb-2 text-2xl  tracking-tight text-white">{title}</h5>
     </div>   
-    <ul >
+    <ul class="flex gap-4 " >
         {tags.map(tag => (
-            <li class="inline-block bg-black rounded-full px-2 py-1 text-sm font-semibold text-white mr-2 mb-2  ">
-                <tag.icon class="inline-block mr-1 size-24"/>
-                 {tag.name}
+            <li class=" flex justify-center items-center flex-col bg-black rounded-xl border border-blue-600  p-3 text-sm font-semibold text-blue-600 gap-2   ">
+                <tag.icon class="  size-14"/>
+          
+                   {tag.name}
+          
             </li>
         ))}
     </ul>

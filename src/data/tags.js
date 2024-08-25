@@ -22,6 +22,7 @@ import ZustandIcon from "@/icons/Zustand.astro"
 import ZodIcon from "@/icons/Zod.astro"
 import AstroIcon from "@/icons/AstroIcon.astro"
 import BunIcon from "@/icons/Bun.astro"
+import NextJsIcon from "@/icons/Nextjs.astro"
 
 export const TAGS = {
     HTML: {
@@ -120,6 +121,11 @@ export const TAGS = {
     BUN: {
         name: 'Bun',
         icon: BunIcon,
-    },        
+    },     
+    NEXT: {
+        name: 'NextJS',
+        icon: NextJsIcon,
+    },
+      
         
 }

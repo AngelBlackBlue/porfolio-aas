@@ -5,21 +5,24 @@ import LinkedIn from '@/icons/LinkedIn.astro';
 import GitHub from '@/icons/Github.astro';
 import Layout from '@/layouts/Layout.astro';
 import Gmail from '@/icons/Gmail.astro';
-import image from "../../public/images/photo-aas.jpeg"
 import Expirience from '@/components/Expirience.astro';
 import Briefcase from '@/icons/Briefcase.astro';
 import Proyects from '@/components/Proyects.astro';
+import CodeIcon from '@/icons/Code.astro';
+
 
 ---
 
 <Layout 
-    title="Portfolio de Angel - Desarrollador y programador web"
+    title="Portafolio de Angel - Desarrollador y programador web"
 	description=""
 	>
 	<main>
-		<section class="w-full mx-auto lg:w-[740px] text-white mt-20">
+		
+		<section id='inicio' class="w-full mx-auto lg:w-[740px] text-white mt-20">
 			<h1 class="text-3xl font-bold flex justify-center flex-row gap-x-4 pb-4">
-				Hey 👋, I'm Angel Suarez!
+				<img class="w-10 h-10 rounded-full" src="images/photo-aas.webp" alt="Rounded avatar">
+				Hola 👋, soy Angel Suarez!
 				<a 
 				    href="https://www.linkedin.com/in/suarezangel/"
 					target="_blank"
@@ -29,8 +32,8 @@ import Proyects from '@/components/Proyects.astro';
 					<Badge>Disponible para trabajar</Badge>
 				</a>
 			</h1>
-			<h2 class="text-xl flex justify-center">
-				<span class=" text-blue-600">Desarrollador Full Stack.</span>
+			<h2 class="text-2xl flex justify-center">
+				<span class=" font-bold text-blue-600">Desarrollador Full Stack.</span>
 				<span class="w-2"></span>
 				 De Argentina 💙🤍💙 🧉.
 			</h2>
@@ -50,18 +53,25 @@ import Proyects from '@/components/Proyects.astro';
 			</nav>
 		</section>	
 		
-		<section id="experiencia" class="pb-6 w-full mx-auto lg:w-[740px] text-white mt-20 pl-8">
+		<!-- <section id="experiencia" class="pb-6 w-full mx-auto lg:w-[740px] text-white mt-20 pl-8">
 			<h2 class="text-2xl  flex gap-x-2 pb-4 items-center">
 				<Briefcase class="size-6"/>
 				Experiencia
 			</h2>
 			<Expirience />
-		</section>
+		</section> -->
+
 		
-		<section class="flex justify-center mt-2 px-4">
-			<div class="grid grid-cols-3 gap-4 ">
-				<Proyects/>		   
-			</div>
+		<section id='proyectos' class="flex justify-center flex-col mt-32 px-4">
+			<h2 class="text-2xl flex gap-x-2 pb-4 mx-40">
+				<CodeIcon class="size-6"/>
+				Proyectos
+			</h2>
+			<div class="flex justify-center">
+				<div class="grid grid-cols-3 gap-4 ">
+					<Proyects/>		   
+				</div>
+			</div>			
 		</section>
 	</main>
 </Layout>

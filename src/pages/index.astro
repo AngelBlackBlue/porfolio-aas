@@ -9,6 +9,7 @@ import Expirience from '@/components/Expirience.astro';
 import Briefcase from '@/icons/Briefcase.astro';
 import Proyects from '@/components/Proyects.astro';
 import CodeIcon from '@/icons/Code.astro';
+import SkillsIcon from '@/icons/Skills.astro';
 
 
 ---
@@ -63,7 +64,7 @@ import CodeIcon from '@/icons/Code.astro';
 
 		
 		<section id='proyectos' class="flex justify-center flex-col mt-32 px-4">
-			<h2 class="text-2xl flex gap-x-2 pb-4 mx-40">
+			<h2 class="text-2xl flex gap-x-2 pb-4 mx-40 items-center">
 				<CodeIcon class="size-6"/>
 				Proyectos
 			</h2>
@@ -75,15 +76,15 @@ import CodeIcon from '@/icons/Code.astro';
 		</section>
 
 		<section id='skills' class="flex justify-center flex-col mt-32 px-4">
-			<h2 class="text-2xl flex gap-x-2 pb-4 mx-40">
-				<CodeIcon class="size-6"/>
-				Proyectos
+			<h2 class="text-2xl flex gap-x-2 pb-4 mx-40 items-center">
+				<SkillsIcon class="size-6"/>
+				Skills
 			</h2>
-			<div class="flex justify-center">
+			<!-- <div class="flex justify-center">
 				<div class="grid grid-cols-3 gap-4 ">
 					<Proyects/>		   
 				</div>
-			</div>			
+			</div>			 -->
 		</section>
 	</main>
 </Layout>

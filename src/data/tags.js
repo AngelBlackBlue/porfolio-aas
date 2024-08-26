@@ -29,6 +29,7 @@ import GraphQLIcon from "@/icons/GraphQL.astro"
 import ApolloIcon from "@/icons/Apollo.astro"
 import TypeORMIcon from "@/icons/TypeORM.astro"
 import MySQLIcon from "@/icons/MySQL.astro"
+import JestIcon from "@/icons/Jest.astro"
 
 export const TAGS = {
     HTML: {
@@ -163,6 +164,11 @@ export const TAGS = {
     MYSQL: {
         name: 'MySQL',
         icon: MySQLIcon,
+
+    },
+    JEST: {
+        name: 'Jest',
+        icon: JestIcon,
     }
       
        

@@ -37,6 +37,7 @@ import SlackIcon from "@/icons/Slack.astro"
 import DiscordIcon from "@/icons/Discord.astro"
 import GitIcon from "@/icons/Git.astro"
 import VisualStudioCodeIcon from "@/icons/VisualStudioCode.astro"
+import DockerIcon from "@/icons/Docker.astro"
 
 export const TAGS = {
     HTML: {
@@ -208,6 +209,14 @@ export const TAGS = {
     VSC: {
         name: 'VS Code',
         icon: VisualStudioCodeIcon,
+    },
+    DOCKER_DESKTOP: {
+        name: 'Docker Desktop',
+        icon: DockerIcon,
+    },
+    DOCKER_COMPOSE: {
+        name: 'Docker Compose',
+        icon: DockerIcon,
     }
       
        

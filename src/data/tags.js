@@ -27,6 +27,7 @@ import ShadcbUiIcon from "@/icons/ShadcbUi.astro"
 import ReactQueryIcon from "@/icons/ReactQuery.astro"
 import GraphQLIcon from "@/icons/GraphQL.astro"
 import ApolloIcon from "@/icons/Apollo.astro"
+import TypeORMIcon from "@/icons/TypeORM.astro"
 
 export const TAGS = {
     HTML: {
@@ -153,7 +154,12 @@ export const TAGS = {
     APOLLO_SANDBOX:{
         name: 'Apollo Sandbox',
         icon: ApolloIcon,
-    }  
+    },
+    TYPEORM: {
+        name: 'TypeORM',
+        icon: TypeORMIcon,
+    },
+      
        
         
 }

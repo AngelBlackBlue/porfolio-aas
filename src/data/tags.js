@@ -35,6 +35,7 @@ import TrelloIcon from "@/icons/Trello.astro"
 import GithubIcon from "@/icons/Github.astro"
 import SlackIcon from "@/icons/Slack.astro"
 import DiscordIcon from "@/icons/Discord.astro"
+import GitIcon from "@/icons/Git.astro"
 
 export const TAGS = {
     HTML: {
@@ -194,7 +195,15 @@ export const TAGS = {
     DISCORD: {
         name: 'Discord',
         icon: DiscordIcon,
-    }
+    },
+    GIT: {
+        name: 'Git',
+        icon: GitIcon,
+    },
+    GITHUB: {
+        name: 'GitHub',
+        icon: GithubIcon
+    },
       
        
         

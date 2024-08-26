@@ -36,6 +36,7 @@ import GithubIcon from "@/icons/Github.astro"
 import SlackIcon from "@/icons/Slack.astro"
 import DiscordIcon from "@/icons/Discord.astro"
 import GitIcon from "@/icons/Git.astro"
+import VisualStudioCodeIcon from "@/icons/VisualStudioCode.astro"
 
 export const TAGS = {
     HTML: {
@@ -204,6 +205,10 @@ export const TAGS = {
         name: 'GitHub',
         icon: GithubIcon
     },
+    VSC: {
+        name: 'VS Code',
+        icon: VisualStudioCodeIcon,
+    }
       
        
         

@@ -24,6 +24,7 @@ import AstroIcon from "@/icons/AstroIcon.astro"
 import BunIcon from "@/icons/Bun.astro"
 import NextJsIcon from "@/icons/Nextjs.astro"
 import ShadcbUiIcon from "@/icons/ShadcbUi.astro"
+import ReactQueryIcon from "@/icons/ReactQuery.astro"
 
 export const TAGS = {
     HTML: {
@@ -130,6 +131,10 @@ export const TAGS = {
     SHADCN: {
         name: 'Shadcn/ui',
         icon: ShadcbUiIcon,
+    },
+    REACTQUERY:{
+        name: 'React Query',
+        icon: ReactQueryIcon,
     }  
         
 }

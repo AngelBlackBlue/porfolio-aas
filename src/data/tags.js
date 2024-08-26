@@ -28,6 +28,7 @@ import ReactQueryIcon from "@/icons/ReactQuery.astro"
 import GraphQLIcon from "@/icons/GraphQL.astro"
 import ApolloIcon from "@/icons/Apollo.astro"
 import TypeORMIcon from "@/icons/TypeORM.astro"
+import MySQLIcon from "@/icons/MySQL.astro"
 
 export const TAGS = {
     HTML: {
@@ -159,6 +160,10 @@ export const TAGS = {
         name: 'TypeORM',
         icon: TypeORMIcon,
     },
+    MYSQL: {
+        name: 'MySQL',
+        icon: MySQLIcon,
+    }
       
        
         

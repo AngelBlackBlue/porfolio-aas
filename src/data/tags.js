@@ -32,6 +32,8 @@ import MySQLIcon from "@/icons/MySQL.astro"
 import JestIcon from "@/icons/Jest.astro"
 import PostmanIcon from "@/icons/Postman.astro"
 import TrelloIcon from "@/icons/Trello.astro"
+import GithubIcon from "@/icons/Github.astro"
+import SlackIcon from "@/icons/Slack.astro"
 
 export const TAGS = {
     HTML: {
@@ -179,6 +181,14 @@ export const TAGS = {
     TRELLO: {
         name: 'Trello',
         icon: TrelloIcon,    
+    },
+    GITHUB_PROJECT: {
+        name: 'GitHub Project',
+        icon: GithubIcon
+    },
+    SLACK: {
+        name: 'Slack',
+        icon: SlackIcon,
     }
       
        

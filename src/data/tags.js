@@ -38,6 +38,7 @@ import DiscordIcon from "@/icons/Discord.astro"
 import GitIcon from "@/icons/Git.astro"
 import VisualStudioCodeIcon from "@/icons/VisualStudioCode.astro"
 import DockerIcon from "@/icons/Docker.astro"
+import NpmIcon from "@/icons/Npm.astro"
 
 export const TAGS = {
     HTML: {
@@ -217,7 +218,11 @@ export const TAGS = {
     DOCKER_COMPOSE: {
         name: 'Docker Compose',
         icon: DockerIcon,
-    }
+    },
+    NPM: {
+        name: 'NPM',
+        icon: NpmIcon,
+    },
       
        
         

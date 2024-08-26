@@ -30,6 +30,8 @@ import ApolloIcon from "@/icons/Apollo.astro"
 import TypeORMIcon from "@/icons/TypeORM.astro"
 import MySQLIcon from "@/icons/MySQL.astro"
 import JestIcon from "@/icons/Jest.astro"
+import PostmanIcon from "@/icons/Postman.astro"
+import TrelloIcon from "@/icons/Trello.astro"
 
 export const TAGS = {
     HTML: {
@@ -169,6 +171,14 @@ export const TAGS = {
     JEST: {
         name: 'Jest',
         icon: JestIcon,
+    },
+    POSTMAN: {
+        name: 'Postman',
+        icon: PostmanIcon,
+    },
+    TRELLO: {
+        name: 'Trello',
+        icon: TrelloIcon,    
     }
       
        

@@ -26,6 +26,7 @@ import NextJsIcon from "@/icons/Nextjs.astro"
 import ShadcbUiIcon from "@/icons/ShadcbUi.astro"
 import ReactQueryIcon from "@/icons/ReactQuery.astro"
 import GraphQLIcon from "@/icons/GraphQL.astro"
+import ApolloIcon from "@/icons/Apollo.astro"
 
 export const TAGS = {
     HTML: {
@@ -140,6 +141,10 @@ export const TAGS = {
     GRAPHQL: {
         name: 'GraphQL',
         icon: GraphQLIcon,
-    },  
+    }, 
+    ApolloClientIcon:{
+        name: 'Apollo Client',
+        icon: ApolloIcon,
+    } 
         
 }

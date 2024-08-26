@@ -25,6 +25,7 @@ import BunIcon from "@/icons/Bun.astro"
 import NextJsIcon from "@/icons/Nextjs.astro"
 import ShadcbUiIcon from "@/icons/ShadcbUi.astro"
 import ReactQueryIcon from "@/icons/ReactQuery.astro"
+import GraphQLIcon from "@/icons/GraphQL.astro"
 
 export const TAGS = {
     HTML: {
@@ -135,6 +136,10 @@ export const TAGS = {
     REACTQUERY:{
         name: 'React Query',
         icon: ReactQueryIcon,
-    }  
+    },
+    GRAPHQL: {
+        name: 'GraphQL',
+        icon: GraphQLIcon,
+    },  
         
 }

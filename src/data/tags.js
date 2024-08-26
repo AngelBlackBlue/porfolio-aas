@@ -142,9 +142,18 @@ export const TAGS = {
         name: 'GraphQL',
         icon: GraphQLIcon,
     }, 
-    ApolloClientIcon:{
+    APOLLO_CLIENT:{
         name: 'Apollo Client',
         icon: ApolloIcon,
-    } 
+    }, 
+    APOLLO_SERVER:{
+        name: 'Apollo Server',
+        icon: ApolloIcon,
+    },
+    APOLLO_SANDBOX:{
+        name: 'Apollo Sandbox',
+        icon: ApolloIcon,
+    }  
+       
         
 }

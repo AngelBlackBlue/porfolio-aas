@@ -15,7 +15,7 @@ const { title, tags } = Astro.props
         <h5 class="mb-2 text-2xl  text-white">{title}</h5>
     </div>   
     <ul class="flex gap-4" >
-        <div class="grid grid-cols-11 gap-4">
+        <div class="grid md:grid-cols-11 grid-cols-3 gap-4">
 
             {tags.map(tag => (
                 <li class=" flex justify-center items-center flex-col  bg-[#161616] hover:bg-[#191919] rounded-xl border border-blue-600  p-4 text-sm font-semibold text-blue-600 gap-2   ">

@@ -10,6 +10,14 @@ export const PROYECTS = [
     
     },
     {
+        image: "/images/proyects/Portafolio.webp",
+        title: 'Back End - Portafolio',
+        description: 'Api de posteo por autor con tablas relacionales.',
+        github: 'https://github.com/AngelBlackBlue/nestjs-graphql-ejemplo',
+        tags: [TAGS.NODEJS, TAGS.GRAPHQL, TAGS.APOLLO_SERVER, TAGS.TYPEORM, TAGS.MYSQL, TAGS.DOCKER, TAGS.JEST],
+    
+    },
+    {
         image: "/images/proyects/gestion360.webp",
         title: 'Back End - Gestion 360',
         description: 'Plataforma de gestión de inventarios y stock para pequenos comerciantes.',

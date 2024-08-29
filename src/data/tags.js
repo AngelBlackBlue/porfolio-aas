@@ -223,6 +223,11 @@ export const TAGS = {
         name: 'NPM',
         icon: NpmIcon,
     },
+    DOCKER: {
+        name: 'Docker',
+        icon: DockerIcon,
+        
+    }
       
        
         

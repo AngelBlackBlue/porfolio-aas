@@ -10,11 +10,11 @@ export const PROYECTS = [
     
     },
     {
-        image: "/images/proyects/Portafolio.webp",
-        title: 'Back End - Portafolio',
+        image: "/images/proyects/NestJS_GraphQL.webp",
+        title: 'Back End - NestJS GraphQL',
         description: 'Api de posteo por autor con tablas relacionales.',
         github: 'https://github.com/AngelBlackBlue/nestjs-graphql-ejemplo',
-        tags: [TAGS.NODEJS, TAGS.GRAPHQL, TAGS.APOLLO_SERVER, TAGS.TYPEORM, TAGS.MYSQL, TAGS.DOCKER, TAGS.JEST],
+        tags: [TAGS.NESTJS, TAGS.GRAPHQL, TAGS.APOLLO_SERVER, TAGS.TYPEORM, TAGS.MYSQL, TAGS.DOCKER, TAGS.JEST],
     
     },
     {

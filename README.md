@@ -39,7 +39,10 @@ Este portafolio fue desarrollado para destacar mis proyectos y habilidades como 
 
 - ![Bun](https://img.shields.io/badge/-Bun-000000?logo=bun&logoColor=white&style=for-the-badge)
 
-  
+
+## Deploy
+
+[Hacer clic aquí para ver mí Portafolio ](https://portafolio-aas.netlify.app/)
 
 ## Scripts Disponibles
 

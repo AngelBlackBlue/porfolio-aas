@@ -1,54 +1,93 @@
-# Astro Starter Kit: Basics
+# Portfolio AAS
 
-```sh
-npm create astro@latest -- --template basics
+  
+
+Este es el repositorio de mi portafolio personal creado con **Astro**. Este proyecto muestra mis habilidades, proyectos, y experiencia como desarrollador.
+
+  
+
+<div  style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
+
+<img  src="./public/images/proyects/Portafolio.webp"  alt="imagen web"  style="width: 100%; max-width: 1200px;">
+
+<img  src="./public/images/proyects/Portafolio_01.webp"  alt="imagen responsive"  style="width: 100%; max-width: 1200px;">
+
+</div>
+
+  
+  
+
+## Descripción
+
+Este portafolio fue desarrollado para destacar mis proyectos y habilidades como desarrollador Full Stack. Utilicé Astro por su capacidad para crear sitios web rápidos y accesibles, mientras que TailwindCSS me permitió diseñar una interfaz de usuario moderna y responsiva. TypeScript asegura que el código sea robusto y fácil de mantener a medida que el proyecto crece. Además, empleé Flowbite para componentes UI, Bun como gestor de paquetes rápido, y usé HTML5 y CSS3 para estructurar y estilizar el contenido del sitio.
+
+  
+
+## Tecnologías Utilizadas
+
+- ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)
+
+- ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)
+
+- ![Astro](https://img.shields.io/badge/-Astro-FF5A1F?logo=astro&logoColor=white&style=for-the-badge)
+
+- ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge)
+
+- ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge)
+
+- ![Flowbite](https://img.shields.io/badge/-Flowbite-38B2AC?logo=tailwindcss&logoColor=white&style=for-the-badge)
+
+- ![Bun](https://img.shields.io/badge/-Bun-000000?logo=bun&logoColor=white&style=for-the-badge)
+
+  
+
+## Scripts Disponibles
+
+  
+
+-  **`dev`**: Inicia el servidor de desarrollo.
+
+-  **`start`**: Alias para `astro dev`.
+
+-  **`build`**: Verifica el proyecto y luego crea la versión optimizada para producción.
+
+-  **`preview`**: Previsualiza el proyecto después de ser compilado.
+
+-  **`astro`**: Ejecuta comandos de Astro directamente.
+
+  
+
+## Instalación
+
+  
+
+Para ejecutar este proyecto en tu entorno local, sigue estos pasos:
+
+  
+
+1. Clona el repositorio:
+
+```bash
+
+git clone https://github.com/AngelBlackBlue/porfolio-aas.git
+
+```
+2. Instala las dependencias:
+```bash
+
+npm install
+
+```
+3. Inicia el servidor de desarrollo:
+```bash
+
+npm run dev
+
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
-## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
